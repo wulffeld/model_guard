@@ -59,7 +59,3 @@ user.guarded_destroy!
 Submit suggestions or feature requests as a GitHub Issue or Pull
 Request (preferred). If you send a pull request, remember to update the
 corresponding unit tests and/or add new tests.
-
-## Versioning
-
-Semantic Versioning 2.0 as defined at <http://semver.org>.
