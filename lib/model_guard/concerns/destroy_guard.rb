@@ -27,15 +27,6 @@ module ModelGuard
         def guarded_destroy!
           allow_direct_destroy! and destroy!
         end
-
-        def guarded_delete
-          allow_direct_destroy! and delete
-        end
-
-        def delete(**args)
-          raise(DirectDestroyException.new("Can't delete #{self.class.to_s} directly.")) unless @model_guard_destroy_okay
-          super(args)
-        end
       end
     end
   end

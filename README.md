@@ -47,7 +47,7 @@ class User < ActiveRecord::Base
 end
 ```
 
-Will raise an exception when calling `destroy` on an instance of `User`. Instead use `guarded_destroy`, `guarded_destroy!` or `guarded_delete`.
+Will raise an exception when calling `destroy` on an instance of `User`. Instead use `guarded_destroy` or `guarded_destroy!`.
 
 ```ruby
 user.guarded_destroy
